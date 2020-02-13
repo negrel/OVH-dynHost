@@ -4,7 +4,6 @@
 log="."
 
 if [ ! -z "$LOG" ]; then
-    echo "LOG: |$LOG|"
     log="$LOG"
 fi
 
