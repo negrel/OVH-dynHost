@@ -9,12 +9,24 @@ function LOG() {
   
   # Print & Log
   echo $msg
-  echo $msg >> ./ipify.log
+  echo $msg >> ./dynHost.log
 }
 
 ###
 # Script body
 ###
+
+# Checking env variables
+if [ -z $OVH_USERNAME ]; then
+    LOG "OVH_USERNAME is not set."
+    exit 1
+elif [ -z $OVH_PASSWD ]; then
+    LOG "OVH_PASSWD is not set."
+    exit 1
+elif [ -z $OVH_HOSTNAME ]; then
+    LOG "OVH_HOSTNAME is not set."
+    exit 1
+fi
 
 # Current ip address
 ip=$(curl -s https://api.ipify.org)
