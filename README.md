@@ -19,7 +19,7 @@ $ . ./dynHost.bash
 $ OVH_USERNAME="my_username" OVH_PASSWD="my_passwd" OVH_HOSTNAME="my_hostname" . ./dynHost.bash 
 ```
 
-### Log file
+### Log file
 By default the log file is created from where the script is launch, you can provide a custom path by setting the log variable.
 
 ```
