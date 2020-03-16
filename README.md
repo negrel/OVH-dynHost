@@ -25,3 +25,11 @@ By default the log file is created from where the script is launch, you can prov
 ```
 $ LOG="/home/USER/here" . ./dynHost.bash
 ```
+
+## :stars: Show your support
+
+Please give a :star: if this project helped you!
+
+## :scroll: License
+
+MIT © Alexandre Negrel
